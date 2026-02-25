@@ -7,32 +7,46 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>PAI Service Action Generator</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Generate Your Service Action</h2>
-            <form id="action-form">
-                <label for="service-name">Service Name:</label>
-                <input type="text" id="service-name" name="service-name" required>
-                <label for="action-type">Action Type:</label>
-                <select id="action-type" name="action-type">
-                    <option value="create">Create</option>
-                    <option value="update">Update</option>
-                    <option value="delete">Delete</option>
-                </select>
-                <button type="submit">Generate Action</button>
-            </form>
-        </section>
-        <section>
-            <h2>Generated Action</h2>
-            <pre id="generated-action"></pre>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 PAI Service Action Generator</p>
-    </footer>
+        <form id="paiForm">
+            <label for="yearPAI">Year PAI:</label>
+            <input type="text" id="yearPAI" name="yearPAI"><br><br>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject"><br><br>
+
+            <label for="studentAge">Student Age:</label>
+            <input type="text" id="studentAge" name="studentAge"><br><br>
+
+            <label for="unit">Unit:</label>
+            <input type="text" id="unit" name="unit"><br><br>
+
+            <label for="content">Content:</label>
+            <textarea id="content" name="content"></textarea><br><br>
+
+            <label for="actionType">Action Type:</label>
+            <input type="text" id="actionType" name="actionType"><br><br>
+
+            <label for="context">Context:</label>
+            <input type="text" id="context" name="context"><br><br>
+
+            <label for="apiKey">API Key:</label>
+            <input type="text" id="apiKey" name="apiKey"><br><br>
+
+            <input type="submit" value="Generate Action">
+        </form>
+        <div class="results-panel">
+            <ul class="tabs">
+                <li><a href="#activity">Activity</a></li>
+                <li><a href="#rubric">Rubric</a></li>
+                <li><a href="#reflection">Reflection</a></li>
+            </ul>
+            <div id="activity" class="tab-content">Activity results will be displayed here.</div>
+            <div id="rubric" class="tab-content">Rubric results will be displayed here.</div>
+            <div id="reflection" class="tab-content">Reflection results will be displayed here.</div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
