@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAI Service Action Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PAI Service Action Generator</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Generate Your Service Action</h2>
+            <form id="action-form">
+                <label for="service-name">Service Name:</label>
+                <input type="text" id="service-name" name="service-name" required>
+                <label for="action-type">Action Type:</label>
+                <select id="action-type" name="action-type">
+                    <option value="create">Create</option>
+                    <option value="update">Update</option>
+                    <option value="delete">Delete</option>
+                </select>
+                <button type="submit">Generate Action</button>
+            </form>
+        </section>
+        <section>
+            <h2>Generated Action</h2>
+            <pre id="generated-action"></pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 PAI Service Action Generator</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
